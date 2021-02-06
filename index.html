@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- 共通 -->
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700,900' rel='stylesheet'
+		type='text/css'>
+	<link rel="shortcut icon" href="img/header/favicon.ico">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/ownerportal.js"></script>
+	<!-- <script src="./stickyfill.min.js"></script> -->
+
+	<!-- 個別 -->
+
+
+
+	<title>ホーム｜オーナーポータル</title>
+</head>
+
+<body>
+	<div id="contents">
+		<header>
+			<!--PC表示-->
+			<div class="pc">
+				<div class="flex justify-between align-center">
+					<a href="index.html"><img src="img/header/logo.png" alt="ロゴ"></a>
+					<img src="img/header/header_img.jpg" alt="ヘッダー画像" class="header_img">
+					<div class="flex align-center">
+						<p class="marr10">山田 花子 様</p>
+						<p class="button_ptn01 logout"><a href="login.html">ログアウト</a></p>
+						<!-- <p class="button_ptn01 login"><a href="login.html">ログイン</a></p> -->
+					</div>
+				</div>
+			</div>
+			<!--PC表示ここまで-->
+			<!--sp表示-->
+			<div class="sp">
+				<a href="index.html"><img src="img/header/logo.png" alt="ロゴ"></a>
+				<div class="login_logout flex align-center">
+					<p class="marr10 username">山田 花子 様</p>
+					<p class="button_ptn01 logout"><a href="#">ログアウト</a></p>
+				</div>
+			</div>
+			<!--sp表示ここまで-->
+		</header>
+		<div class="flex mar20 marb0">
+			<!-- サイドメニューpc -->
+			<aside class="navi pc">
+				<ul class="menu">
+					<li class="menu_item home_btn">
+						<a href="index.html" class="menu_home">ホーム</a>
+					</li>
+					<li class="menu_item news_btn">
+						<a class="menu_item_link js-menu_item_link">お知らせ</a>
+						<ul class="submenu">
+							<li class="submenu_item">
+								<a href="notice/notice_list.html">お知らせ一覧</a>
+							</li>
+							<li class="submenu_item">
+								<a href="notice/new_arrival_list.html">新着一覧</a>
+							</li>
+							<li class="submenu_item">
+								<a href="notice/consultation_history_list.html">相談履歴一覧</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu_item movein_btn">
+						<a class="menu_item_link js-menu_item_link">入居情報</a>
+						<ul class="submenu">
+							<li class="submenu_item">
+								<a href="tenancy/tenancy_status.html">入居状況</a>
+							</li>
+							<li class="submenu_item">
+								<a href="tenancy/tenancy_rate_transition.html">入居率推移</a>
+							</li>
+							<li class="submenu_item">
+								<a href="tenancy/recruitment_status.html">募集状況</a>
+							</li>
+							<li class="submenu_item">
+								<a href="tenancy/correspondence_history.html">入居者対応履歴</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu_item management_btn">
+						<a class="menu_item_link js-menu_item_link">管理情報</a>
+						<ul class="submenu">
+							<li class="submenu_item">
+								<a href="management_info/building_room_info.html">建物・部屋情報</a>
+							</li>
+							<li class="submenu_item">
+								<a href="management_info/management_contract.html">管理契約</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu_item income_btn">
+						<a class="menu_item_link js-menu_item_link">収支情報</a>
+						<ul class="submenu">
+							<li class="submenu_item">
+								<a href="balance_info/remittance_details.html">送金明細</a>
+							</li>
+							<li class="submenu_item">
+								<a href="balance_info/annual_balance.html">年間収支</a>
+							</li>
+							<li class="submenu_item">
+								<a href="balance_info/delinquency_dunning.html">滞納・督促</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu_item maintenance_btn">
+						<a class="menu_item_link js-menu_item_link">メンテナンス</a>
+						<ul class="submenu">
+							<li class="submenu_item">
+								<a href="maintenance/list_of_repair_reports.html">修繕一覧</a>
+							</li>
+							<li class="submenu_item">
+								<a href="maintenance/repair_approval_list.html">修繕承認一覧</a>
+							</li>
+							<li class="submenu_item">
+								<a href="maintenance/inspection_cleaning.html">点検清掃</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu_item account_btn">
+						<a class="menu_item_link js-menu_item_link">アカウント</a>
+						<ul class="submenu">
+							<li class="submenu_item">
+								<a href="account/owner_info.html">オーナー様情報</a>
+							</li>
+							<li class="submenu_item">
+								<a href="account/management_company_info.html">管理会社情報</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<!-- バナーエリア -->
+				<div class="bunner-aria">
+					<ul>
+						<li><a href=""><img src="img/top_bunner/sample01.jpg" alt=""></a></li>
+						<li><a href=""><img src="img/top_bunner/sample03.png" alt=""></a></li>
+						<li><a href=""><img src="img/top_bunner/sample03.png" alt=""></a></li>
+					</ul>
+				</div>
+
+			</aside>
+
+			<!-- メニューsp -->
+			<div class="humb-menu sp">
+				<input id="gnav-input" type="checkbox">
+				<label for="gnav-input" id="gnav-btn">
+					<div i class="fas fa-bars"></div>
+				</label>
+
+				<div id="gnav-content">
+					<!-- タイトルを記載ください -->
+					<div class="humb-menu__title"><a href="index.html"><img src="img/header/logo.png" alt="ロゴ"></a>
+					</div>
+					<div class="gnav-content_inner">
+						<div class="home_sp">
+							<!-- 親要素の名前 -->
+							<p class="home_btn"><a href="index.html">ホーム</a></p>
+						</div>
+
+						<label for="label2" class="label2">
+							<p class="news_btn">お知らせ</p>
+							<span class="menubutton_sp menubutton_sp1"></span>
+						</label>
+						<input type="checkbox" id="label2" class="cssacc" />
+						<div class="accshow">
+							<p><a href="notice/notice_list.html">お知らせ一覧</a></p>
+							<p><a href="notice/new_arrival_list.html">新着一覧</a></p>
+							<p><a href="notice/consultation_history_list.html">相談履歴一覧</a></p>
+						</div>
+
+						<label for="label3" class="label3">
+							<p class="movein_btn">入居情報</p>
+							<span class="menubutton_sp menubutton_sp2"></span>
+						</label>
+						<input type="checkbox" id="label3" class="cssacc" />
+						<div class="accshow">
+							<p><a href="tenancy/tenancy_status.html">入居状況</a></p>
+							<p><a href="tenancy/tenancy_rate_transition.html">入居率推移</a></p>
+							<p><a href="tenancy/recruitment_status.html">募集状況</a></p>
+							<p><a href="tenancy/correspondence_history.html">入居者対応履歴</a></p>
+						</div>
+
+						<label for="label4" class="label4">
+							<p class="management_btn">管理情報</p>
+							<span class="menubutton_sp menubutton_sp3"></span>
+						</label>
+						<input type="checkbox" id="label4" class="cssacc" />
+						<div class="accshow">
+							<p><a href="management_info/building_room_info.html">建物・部屋情報</a></p>
+							<p><a href="management_info/management_contract.html">管理契約</a></p>
+						</div>
+
+
+						<label for="label5" class="label5">
+							<p class="income_btn">収支情報</p>
+							<span class="menubutton_sp menubutton_sp4"></span>
+						</label>
+						<input type="checkbox" id="label5" class="cssacc" />
+						<div class="accshow">
+							<p><a href="balance_info/remittance_details.html">送金明細</a></p>
+							<p><a href="balance_info/annual_balance.html">年間収支</a></p>
+							<p><a href="balance_info/delinquency_dunning.html">滞納・督促</a></p>
+						</div>
+
+						<label for="label6" class="label6">
+							<p class="maintenance_btn">メンテナンス</p>
+							<span class="menubutton_sp menubutton_sp5"></span>
+						</label>
+						<input type="checkbox" id="label6" class="cssacc" />
+						<div class="accshow">
+							<p><a href="maintenance/list_of_repair_reports.html">修繕一覧</a></p>
+							<p><a href="maintenance/repair_approval_list.html">修繕承認一覧</a></p>
+							<p><a href="maintenance/inspection_cleaning.html">点検清掃</a></p>
+						</div>
+
+						<label for="label7" class="label7">
+							<p class="account_btn">アカウント</p>
+							<span class="menubutton_sp menubutton_sp6"></span>
+						</label>
+						<input type="checkbox" id="label7" class="cssacc" />
+						<div class="accshow">
+							<p><a href="account/owner_info.html">オーナー様情報</a></p>
+							<p><a href="account/management_company_info.html">管理会社情報</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- // サイドメニュー -->
+			<!-- メイン -->
+			<main>
+				<div id="top_main" class="marl20 hei500">
+					<!-- タイムライン -->
+
+					<div class="timeline-title">
+						<h2 class="top_news">News</h2>
+					</div>
+
+
+					<div id="timeline" class="contentbox timeline padt0">
+						<div class="tooltip3">
+							<p class="questionpop"><i class="fas fa-question-circle"></i></p>
+							<div class="description3">
+								<p class="fcolorm marb10">アイコン説明</p>
+								<div class="description3_inner">
+									<ul>
+										<li><img src="img/index/explanation_aicon01.png" alt="">お知らせ</li>
+										<li><img src="img/index/explanation_aicon02.png" alt="">賃貸借契約締結</li>
+										<li><img src="img/index/explanation_aicon03.png" alt="">更新</li>
+										<li><img src="img/index/explanation_aicon04.png" alt="">退去</li>
+										<li><img src="img/index/explanation_aicon05.png" alt="">入居者対応</li>
+									</ul>
+									<ul>
+										<li><img src="img/index/explanation_aicon06.png" alt="">審査</li>
+										<li><img src="img/index/explanation_aicon07.png" alt="">送金明細</li>
+										<li><img src="img/index/explanation_aicon08.png" alt="">オーナー対応</li>
+										<li><img src="img/index/explanation_aicon09.png" alt="">修繕見積</li>
+										<li><img src="img/index/explanation_aicon10.png" alt="">申込</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<section id="conference-timeline">
+							<div class="timeline-start">2020<span>年</span></div>
+							<div class="conference-center-line"></div>
+							<div class="conference-timeline-content">
+								<!-- お知らせコンテンツ -->
+								<div class="timeline-article flex align-center">
+									<div class="content-left-container flex align-center wrap">
+										<div class="article-number_notice flex align-center">
+											<p class="color_white">10月5日</p>
+										</div>
+										<div class="content-left">
+											<p class="new_pop">New</p>
+											<div class="flex align-center wrap justify-between">
+												<p class="text-link"><a href="">第5回オーナーセミナー11月開催のお知らせ</a></p>
+												<p class="Unread_pop">未読</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="meta-date">
+										<div class="meta-date-circle-notice">
+											<img src="img/index/timeline03.png">
+										</div>
+									</div>
+								</div>
+								<!-- // お知らせコンテンツ -->
+
+								<!-- 新着情報コンテンツ -->
+								<div class="timeline-article flex align-center justify-end justify-start-sp">
+									<div class="content-right-container flex align-center wrap">
+										<div class="article-number_news flex align-center">
+											<p class="color_white">10月1日</p>
+										</div>
+										<div class="content-right">
+											<p class="text-link"><a href="">【申込受付】北沢マンション 108</a></p>
+										</div>
+									</div>
+									<div class="meta-date">
+										<div class="meta-date-circle-news">
+											<img src="img/index/timeline02.png">
+										</div>
+									</div>
+								</div>
+								<!-- // 新着情報コンテンツ -->
+
+								<!-- 新着情報コンテンツ -->
+								<div class="timeline-article flex align-center justify-end justify-start-sp">
+									<div class="content-right-container flex align-center wrap">
+										<div class="article-number_news flex align-center">
+											<p class="color_white">9月30日</p>
+										</div>
+										<div class="content-right">
+											<p class="text-link"><a href="">【送金明細】10月分家賃送金明細のご案内</a></p>
+										</div>
+									</div>
+									<div class="meta-date">
+										<div class="meta-date-circle-news">
+											<img src="img/index/timeline01.png">
+										</div>
+									</div>
+								</div>
+								<!-- // 新着情報コンテンツ -->
+								<!-- お知らせコンテンツ -->
+								<div class="timeline-article flex align-center">
+									<div class="content-left-container flex align-center wrap">
+										<div class="article-number_notice flex align-center">
+											<p class="color_white">9月28日</p>
+										</div>
+										<div class="content-left">
+											<p class="text-link"><a href="">第4回オーナーセミナー10月開催のお知らせ</a></p>
+										</div>
+									</div>
+
+									<div class="meta-date">
+										<div class="meta-date-circle-notice">
+											<img src="img/index/timeline03.png">
+										</div>
+									</div>
+								</div>
+								<!-- // お知らせコンテンツ -->
+								<!-- 新着情報コンテンツ -->
+								<div class="timeline-article flex align-center justify-end justify-start-sp">
+									<div class="content-right-container flex align-center wrap">
+										<div class="article-number_news flex align-center">
+											<p class="color_white">8月30日</p>
+										</div>
+										<div class="content-right">
+											<p class="text-link"><a href="">【送金明細】9月分家賃送金明細のご案内</a></p>
+										</div>
+									</div>
+									<div class="meta-date">
+										<div class="meta-date-circle-news">
+											<img src="img/index/timeline01.png">
+										</div>
+									</div>
+								</div>
+								<!-- // 新着情報コンテンツ -->
+
+							</div>
+							<div class="timeline-end">
+								<div>2019</div><span>年</span>
+							</div>
+						</section>
+						<!-- // タイムライン -->
+					</div>
+				</div>
+				<!-- // contentbox -->
+				<div id="top_main" class="bg_mint marl20 hei500 pad20">
+					<!-- カテゴリータイル -->
+					<!--PC表示-->
+					<div class="marb20 pc">
+						<ul class="category">
+							<li class="category-tile category-tile01"><a
+									href="management_info/building_room_info.html">建物・部屋情報</a>
+							</li>
+							<li class="category-tile category-tile02"><a
+									href="management_info/management_contract.html">管理契約</a>
+							</li>
+							<li class="category-tile category-tile03"><a
+									href="balance_info/remittance_details.html">送金明細</a></li>
+							<li class="category-tile category-tile04"><a href="account/owner_info.html">オーナー様情報</a>
+							</li>
+						</ul>
+					</div>
+					<!--PC表示ここまで-->
+					<!--sp表示-->
+					<div class="marb10 sp">
+						<ul class="category">
+							<li class="category-tile category-tile01"><a
+									href="management_info/building_room_info.html">建物・部屋情報</a>
+							</li>
+							<li class="category-tile category-tile02"><a
+									href="management_info/management_contract.html">管理契約</a>
+							</li>
+						</ul>
+						<ul class="category">
+							<li class="category-tile category-tile03"><a
+									href="balance_info/remittance_details.html">送金明細</a></li>
+							<li class="category-tile category-tile04"><a href="account/owner_info.html">オーナー様情報</a>
+							</li>
+						</ul>
+					</div>
+					<!--sp表示ここまで-->
+
+
+					<!-- 収支報告 -->
+					<div id="expenditure_report" class="contentbox pad0020 padb0_sp">
+						<div class="ttlbox marb20 marb2_sp flex align-center wrap">
+							<h2 class="marr10">収支報告</h2>
+							<p class="color_white">(過去6ヶ月の収支表示)</p>
+						</div>
+
+						<!--PC表示-->
+						<div class="pc pad20bt">
+							<p class="unityen">【単位：円(税込)】</p>
+							<div class="table-contents">
+								<table class="expenditure_report_tbl">
+									<tr>
+										<th class="text-center fixed01"></th>
+										<th>6月</th>
+										<th>7月</th>
+										<th>8月</th>
+										<th>9月</th>
+										<th>10月</th>
+										<th>11月</th>
+									</tr>
+									<tr>
+										<th class="text-center fixed01">収入(A)</th>
+										<td class="yen">1,609,800円</td>
+										<td class="yen">0円</td>
+										<td class="yen">1,316,400円</td>
+										<td class="yen">2,200,800円</td>
+										<td class="yen">0円</td>
+										<td class="yen">1,100,400円</td>
+									</tr>
+									<tr>
+										<th class="text-center fixed01">費用(B)</th>
+										<td class="yen">91,653円</td>
+										<td class="yen">0円</td>
+										<td class="yen">81,933円</td>
+										<td class="yen">140,106円</td>
+										<td class="yen">0円</td>
+										<td class="yen">81,053円</td>
+									</tr>
+									<tr>
+										<th class="text-center fixed01">収益(A)-(B)</th>
+										<td class="yen">1,518,147円</td>
+										<td class="yen">0円</td>
+										<td class="yen">1,234,467円</td>
+										<td class="yen">2,060,694円</td>
+										<td class="yen">0円</td>
+										<td class="yen">1,019,347円</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+
+						<!--PC表示ここまで-->
+						<!--sp表示-->
+						<div class="sp">
+							<!--月-->
+							<input id="acd-check4" class="acd-check" type="checkbox">
+							<label class="acd-label" for="acd-check4">6月</label>
+							<div class="acd-content">
+								<p class="unityen">【単位：円(税込)】</p>
+								<table class="expenditure_report_tbl">
+									<tr>
+										<th>収入(A)</th>
+										<td class="yen">1,609,800円</td>
+									</tr>
+									<tr>
+										<th>費用(B)</th>
+										<td class="yen">91,653円</td>
+									</tr>
+									<tr>
+										<th>収益(A)-(B)</th>
+										<td class="yen">1,518,147円</td>
+									</tr>
+								</table>
+							</div>
+							<!--//月-->
+							<!--月-->
+							<input id="acd-check5" class="acd-check" type="checkbox">
+							<label class="acd-label" for="acd-check5">7月</label>
+							<div class="acd-content">
+								<p class="unityen">【単位：円(税込)】</p>
+								<table class="expenditure_report_tbl">
+									<tr>
+										<th>収入(A)</th>
+										<td class="yen">1,609,800円</td>
+									</tr>
+									<tr>
+										<th>費用(B)</th>
+										<td class="yen">91,653円</td>
+									</tr>
+									<tr>
+										<th>収益(A)-(B)</th>
+										<td class="yen">1,518,147円</td>
+									</tr>
+								</table>
+							</div>
+							<!--//月-->
+							<!--月-->
+							<input id="acd-check6" class="acd-check" type="checkbox">
+							<label class="acd-label" for="acd-check6">8月</label>
+							<div class="acd-content">
+								<p class="unityen">【単位：円(税込)】</p>
+								<table class="expenditure_report_tbl">
+									<tr>
+										<th>収入(A)</th>
+										<td class="yen">1,609,800円</td>
+									</tr>
+									<tr>
+										<th>費用(B)</th>
+										<td class="yen">91,653円</td>
+									</tr>
+									<tr>
+										<th>収益(A)-(B)</th>
+										<td class="yen">1,518,147円</td>
+									</tr>
+								</table>
+							</div>
+							<!--//月-->
+							<!--月-->
+							<input id="acd-check7" class="acd-check" type="checkbox">
+							<label class="acd-label" for="acd-check7">9月</label>
+							<div class="acd-content">
+								<p class="unityen">【単位：円(税込)】</p>
+								<table class="expenditure_report_tbl">
+									<tr>
+										<th>収入(A)</th>
+										<td class="yen">1,609,800円</td>
+									</tr>
+									<tr>
+										<th>費用(B)</th>
+										<td class="yen">91,653円</td>
+									</tr>
+									<tr>
+										<th>収益(A)-(B)</th>
+										<td class="yen">1,518,147円</td>
+									</tr>
+								</table>
+							</div>
+							<!--//月-->
+							<!--月-->
+							<input id="acd-check8" class="acd-check" type="checkbox">
+							<label class="acd-label" for="acd-check8">10月</label>
+							<div class="acd-content">
+								<p class="unityen">【単位：円(税込)】</p>
+								<table class="expenditure_report_tbl">
+									<tr>
+										<th>収入(A)</th>
+										<td class="yen">1,609,800円</td>
+									</tr>
+									<tr>
+										<th>費用(B)</th>
+										<td class="yen">91,653円</td>
+									</tr>
+									<tr>
+										<th>収益(A)-(B)</th>
+										<td class="yen">1,518,147円</td>
+									</tr>
+								</table>
+							</div>
+							<!--//月-->
+							<!--月-->
+							<input id="acd-check9" class="acd-check" type="checkbox">
+							<label class="acd-label" for="acd-check9">11月</label>
+							<div class="acd-content">
+								<p class="unityen">【単位：円(税込)】</p>
+								<table class="expenditure_report_tbl">
+									<tr>
+										<th>収入(A)</th>
+										<td class="yen">1,609,800円</td>
+									</tr>
+									<tr>
+										<th>費用(B)</th>
+										<td class="yen">91,653円</td>
+									</tr>
+									<tr>
+										<th>収益(A)-(B)</th>
+										<td class="yen">1,518,147円</td>
+									</tr>
+								</table>
+							</div>
+							<!--//月-->
+						</div>
+						<!--sp表示ここまで-->
+					</div>
+
+
+
+					<!-- 部屋一覧 -->
+					<div id="room_list" class="contentbox pad0 marb0">
+						<div class="ttlbox">
+							<h2>部屋一覧</h2>
+						</div>
+						<div class="flex align-center pad20">
+							<p class="marr5 bold whitesp">建物</p>
+							<form action="#" method="post">
+								<select name="sample" class="minw213">
+									<option value="1">サンプル１</option>
+									<option value="2">サンプル２</option>
+									<option value="3">サンプル３</option>
+								</select>
+							</form>
+						</div>
+
+						<!--PC表示-->
+						<div class="pc padtrlb20">
+							<p class="unityen">【単位：円(税込)】</p>
+							<table class="room_list_tbl">
+								<tr>
+									<th>部屋</th>
+									<th>契約者</th>
+									<th>賃料</th>
+									<th>契約</th>
+									<th>入居者対応</th>
+									<th>滞納</th>
+								</tr>
+								<tr>
+									<td><a href="">101</a></td>
+									<td class="text-left">顧客 234859</td>
+									<td class="yen">72,000円</td>
+									<td>入居中</td>
+									<td class="linkstyle02"><a href="">応対中</a></td>
+									<td class="linkstyle02"><a href="">滞納中</a></td>
+								</tr>
+								<tr>
+									<td><a href="">101</a></td>
+									<td class="text-left">顧客 234859</td>
+									<td class="yen">72,000円</td>
+									<td>入居中</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><a href="">101</a></td>
+									<td class="text-left">顧客 234859</td>
+									<td class="yen">72,000円</td>
+									<td>入居中</td>
+									<td class="linkstyle02"><a href="">応対中</a></td>
+									<td class="linkstyle02"><a href="">滞納中</a></td>
+								</tr>
+								<tr>
+									<td><a href="">101</a></td>
+									<td class="text-left">顧客 234859</td>
+									<td class="yen">72,000円</td>
+									<td>入居中</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><a href="">101</a></td>
+									<td class="text-left">顧客 234859</td>
+									<td class="yen">72,000円</td>
+									<td>入居中</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><a href="">101</a></td>
+									<td class="text-left">顧客 234859</td>
+									<td class="yen">72,000円</td>
+									<td>入居中</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</table>
+						</div>
+						<!--PC表示ここまで-->
+						<!--sp表示-->
+						<div class="sp">
+							<!--部屋-->
+							<input id="acd-check1" class="acd-check" type="checkbox">
+							<label class="acd-label" for="acd-check1">部屋：101</label>
+							<div class="acd-content">
+								<p class="unityen">【単位：円(税込)】</p>
+								<table class="room_list_tbl">
+									<tr>
+										<th>契約者</th>
+										<td>顧客 234859</td>
+									</tr>
+									<tr>
+										<th>賃料</th>
+										<td class="yen">72,000円</td>
+									</tr>
+									<tr>
+										<th>契約</th>
+										<td>入居中</td>
+									</tr>
+									<tr>
+										<th>入居者対応</th>
+										<td class="linkstyle02"><a href="">応対中</a></td>
+									</tr>
+									<tr>
+										<th>滞納</th>
+										<td class="linkstyle02"><a href="">滞納中</a></td>
+									</tr>
+								</table>
+							</div>
+							<!--//部屋-->
+							<!--部屋-->
+							<input id="acd-check2" class="acd-check" type="checkbox">
+							<label class="acd-label" for="acd-check2">部屋：102</label>
+							<div class="acd-content">
+								<p class="unityen">【単位：円(税込)】</p>
+								<table class="room_list_tbl">
+									<tr>
+										<th>契約者</th>
+										<td>顧客 234859</td>
+									</tr>
+									<tr>
+										<th>賃料</th>
+										<td class="yen">72,000円</td>
+									</tr>
+									<tr>
+										<th>契約</th>
+										<td>入居中</td>
+									</tr>
+									<tr>
+										<th>入居者対応</th>
+										<td></td>
+									</tr>
+									<tr>
+										<th>滞納</th>
+										<td></td>
+									</tr>
+								</table>
+							</div>
+							<!--//部屋-->
+							<!--部屋-->
+							<input id="acd-check3" class="acd-check" type="checkbox">
+							<label class="acd-label" for="acd-check3">部屋：103</label>
+							<div class="acd-content">
+								<p class="unityen">【単位：円(税込)】</p>
+								<table class="room_list_tbl">
+									<tr>
+										<th>契約者</th>
+										<td>顧客 234859</td>
+									</tr>
+									<tr>
+										<th>賃料</th>
+										<td class="yen">72,000円</td>
+									</tr>
+									<tr>
+										<th>契約</th>
+										<td>入居中</td>
+									</tr>
+									<tr>
+										<th>入居者対応</th>
+										<td class="linkstyle02"><a href="">応対中</a></td>
+									</tr>
+									<tr>
+										<th>滞納</th>
+										<td class="linkstyle02"><a href="">滞納中</a></td>
+									</tr>
+								</table>
+							</div>
+							<!--//部屋-->
+						</div>
+						<!--sp表示ここまで-->
+					</div>
+
+
+
+				</div>
+				<!-- // bg_mint -->
+			</main>
+			<!-- //メイン -->
+		</div>
+	</div>
+	<!-- //サイドメインflex -->
+	</div>
+	<!-- //contents -->
+
+	<footer>
+		<div class="footer_inner footer_home_sp">
+			<ul>
+				<li><a href="https://www.systemsoft.co.jp/">システムソフト</a></li>
+				<li><a href="https://www.systemsoft.co.jp/">デジット</a></li>
+			</ul>
+		</div>
+		<p class="copy">&copy;Apaman Network Co.,Ltd.</p>
+		<p id="PageTopBtn" style="display: block;"><a href="#wrap"><img src="img/footer/top.png"></a></p>
+	</footer>
+
+</body>
+
+</html>
